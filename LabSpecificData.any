@@ -30,6 +30,39 @@ Main.ModelSetup.LabSpecificData = {
   // preventing the solver from changing if the some muscles becomes over loaded.
   Main.Studies.InverseDynamicStudy.InverseDynamics.Criterion.UpperBoundOnOff = Off;
 
+  /////////////////////////////////////////////////////////////////////////
+  // Moved changes which was previously made directly to the AMMR into this LabSpecificData.any file
+  /////////////////////////////////////////////////////////////////////////
+  Main.HumanModel.BodyModel.SelectedOutput = {
+    AnyFolder OncoEng = {
+      #include "OncoEng/OncoEngSelectedOutput.any"
+    };
+  };
+
+  Main.HumanModel.BodyModel.Trunk.Segments.L5Seg = {
+      //OncoEng
+      AnyDrawNodes DrwNode = {ScaleXYZ = 0.003*{1,1,1};RGB = {1,0,0};};
+      AnyDrawRefFrame L4L5JointReactionMeasureFrame = {
+        Visible = On;
+        RGB = {0.91796875, 0.76953125, 0.06640625};
+        ScaleXYZ = {1.0, 1.0, 1.0};
+      };
+
+      AnyDrawRefFrame drw = {RGB = {1,0,0}; ScaleXYZ={1,1,1};};
+      //OncoEng
+
+  };
+
+  Main.Studies.MarkerTracking = {
+    #include "OncoEng/OncoEngJointAngle.any"
+  };
+  Main.Studies.InverseDynamicStudy = {
+    #include "OncoEng/OncoEngJointLoading.any"
+  };
+
+  /////////////////////////////////////////////////////////////////////////
+
+
   Gravity = -9.81*{0,0,1};
 
 

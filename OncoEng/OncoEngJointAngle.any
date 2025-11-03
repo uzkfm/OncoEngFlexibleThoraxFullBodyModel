@@ -1,0 +1,52 @@
+/* Inside "AnyMocapModel.any", add the reference to this file as below:-
+
+    AnyKinStudy MarkerTracking = { 
+
+      #include "../../OncoEng/OncoEngJointAngle.any" (or any path leading to this file)
+            
+    };
+    
+<\Tools\AnyMocap>
+    
+*/
+
+// Folder for analysis
+
+AnyFolder OncoEngMotionAnalysis = {
+  
+  AnyFolder ThoracicAngle = {
+    
+    AnyVector T1Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T1T2.Pos;
+    AnyVector T2Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T2T3.Pos;
+    AnyVector T3Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T3T4.Pos;
+    AnyVector T4Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T4T5.Pos;
+    AnyVector T5Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T5T6.Pos;
+    AnyVector T6Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T6T7.Pos;
+    AnyVector T7Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T7T8.Pos;
+    AnyVector T8Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T8T9.Pos;
+    AnyVector T9Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T9T10.Pos;
+    AnyVector T10Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T10T11.Pos;
+    AnyVector T11Angle = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T11T12.Pos;
+    AnyVector T12Angle = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.T12L1.Pos;
+    
+  };
+  
+  AnyFolder LumbarAngle ={
+    
+    AnyVector L1Angle = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L1L2.Pos;
+    AnyVector L2Angle = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L2L3.Pos;
+    AnyVector L3Angle = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L3L4.Pos;
+    AnyVector L4Angle = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Pos;
+    AnyVector L5Angle = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Pos;
+    
+  };
+  
+  
+  
+};
+
+AnyOutputFile OncoEngAngleOutputFileCSV = {
+  FileName = Main.Studies.InverseDynamicStudy.ModelEnvironmentConnection.JointsAndDrivers.BaseFileName + "OncoEngSelectedAngleOutputs.csv";
+  Search = {"Main.HumanModel.BodyModel.SelectedOutput.OncoEng.ThoracicAngle.*","Main.HumanModel.BodyModel.SelectedOutput.OncoEng.LumbarAngle.*"}; 
+  
+};

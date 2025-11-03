@@ -1,0 +1,491 @@
+/* Inside "AnyMocapModel.any", add the reference to this file as below:-
+
+    AnyBodyStudy InverseDynamicStudy = { 
+
+      #include "../../OncoEng/OncoEngJointLoading.any" (or any path leading to this file)
+            
+    };
+    
+<\Tools\AnyMocap>
+    
+*/
+
+// Folder for analysis
+
+AnyFolder OncoEngLoadingAnalysis = {
+  
+  
+  AnyFolder Thorax = {
+    
+    // Contact Forces
+    
+    AnyForceMomentMeasure2 ContactForceOnT1 = {
+      AnyRefFrame &refT1C7joint = Main.HumanModel.BodyModel.Trunk.Segments.T1Seg.T1C7JntNode; // You can make any number of these objects!
+      AnySeg &refT1seg = Main.HumanModel.BodyModel.Trunk.Segments.T1Seg; // You can make any number of these objects!
+      AnyForceBase &refT1C7constraint = Main.HumanModel.BodyModel.Trunk.Joints.Cervical.T1C7.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T1Seg.T1C7JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT2 = {
+      AnyRefFrame &refT1T2joint = Main.HumanModel.BodyModel.Trunk.Segments.T2Seg.T1T2JntNode; // You can make any number of these objects!
+      AnySeg &refT2seg = Main.HumanModel.BodyModel.Trunk.Segments.T2Seg; // You can make any number of these objects!
+      AnyForceBase &refT1T2constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T1T2.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T2Seg.T1T2JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT3 = {
+      AnyRefFrame &refT2T3joint = Main.HumanModel.BodyModel.Trunk.Segments.T3Seg.T2T3JntNode; // You can make any number of these objects!
+      AnySeg &refT3seg = Main.HumanModel.BodyModel.Trunk.Segments.T3Seg; // You can make any number of these objects!
+      AnyForceBase &refT2T3constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T2T3.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T3Seg.T2T3JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT4 = {
+      AnyRefFrame &refT3T4joint = Main.HumanModel.BodyModel.Trunk.Segments.T4Seg.T3T4JntNode; // You can make any number of these objects!
+      AnySeg &refT4seg = Main.HumanModel.BodyModel.Trunk.Segments.T4Seg; // You can make any number of these objects!
+      AnyForceBase &refT3T4constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T3T4.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T4Seg.T3T4JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT5 = {
+      AnyRefFrame &refT4T5joint = Main.HumanModel.BodyModel.Trunk.Segments.T5Seg.T4T5JntNode; // You can make any number of these objects!
+      AnySeg &refT5seg = Main.HumanModel.BodyModel.Trunk.Segments.T5Seg; // You can make any number of these objects!
+      AnyForceBase &refT4T5constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T4T5.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T5Seg.T4T5JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT6 = {
+      AnyRefFrame &refT5T6joint = Main.HumanModel.BodyModel.Trunk.Segments.T6Seg.T5T6JntNode; // You can make any number of these objects!
+      AnySeg &refT6seg = Main.HumanModel.BodyModel.Trunk.Segments.T6Seg; // You can make any number of these objects!
+      AnyForceBase &refT5T6constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T5T6.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T6Seg.T5T6JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT7 = {
+      AnyRefFrame &refT6T7joint = Main.HumanModel.BodyModel.Trunk.Segments.T7Seg.T6T7JntNode; // You can make any number of these objects!
+      AnySeg &refT7seg = Main.HumanModel.BodyModel.Trunk.Segments.T7Seg; // You can make any number of these objects!
+      AnyForceBase &refT6T7constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T6T7.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T7Seg.T6T7JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT8 = {
+      AnyRefFrame &refT7T8joint = Main.HumanModel.BodyModel.Trunk.Segments.T8Seg.T7T8JntNode; // You can make any number of these objects!
+      AnySeg &refT8seg = Main.HumanModel.BodyModel.Trunk.Segments.T8Seg; // You can make any number of these objects!
+      AnyForceBase &refT7T8constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T7T8.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T8Seg.T7T8JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT9 = {
+      AnyRefFrame &refT8T9joint = Main.HumanModel.BodyModel.Trunk.Segments.T9Seg.T8T9JntNode; // You can make any number of these objects!
+      AnySeg &refT9seg = Main.HumanModel.BodyModel.Trunk.Segments.T9Seg; // You can make any number of these objects!
+      AnyForceBase &refT8T9constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T8T9.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T9Seg.T8T9JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT10 = {
+      AnyRefFrame &refT9T10joint = Main.HumanModel.BodyModel.Trunk.Segments.T10Seg.T9T10JntNode; // You can make any number of these objects!
+      AnySeg &refT10seg = Main.HumanModel.BodyModel.Trunk.Segments.T10Seg; // You can make any number of these objects!
+      AnyForceBase &refT9T10constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T9T10.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T10Seg.T9T10JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT11 = {
+      AnyRefFrame &refT10T11joint = Main.HumanModel.BodyModel.Trunk.Segments.T11Seg.T10T11JntNode; // You can make any number of these objects!
+      AnySeg &refT11seg = Main.HumanModel.BodyModel.Trunk.Segments.T11Seg; // You can make any number of these objects!
+      AnyForceBase &refT10T11constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T10T11.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T11Seg.T10T11JntNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnT12 = {
+      AnyRefFrame &refT11T12joint = Main.HumanModel.BodyModel.Trunk.Segments.T12Seg.T11T12JntNode; // You can make any number of these objects!
+      AnySeg &refT12seg = Main.HumanModel.BodyModel.Trunk.Segments.T12Seg; // You can make any number of these objects!
+      AnyForceBase &refT11T12constraint = Main.HumanModel.BodyModel.Trunk.Joints.Thorax.T11T12.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.T12Seg.T11T12JntNode.Axes;
+      
+    };
+    
+    // Net Moments
+    
+//    AnyForceMomentMeasure2 NetMomentAtT11T12 = {
+//      AnyRefFrame &ref = Main.HumanModel.BodyModel.Trunk.Segments.T12Seg.T11T12JntNode.RotNode;
+//        IncludeSegments = arrcat(
+//        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Seg.*", "AnySeg"),
+//        &Main.HumanModel.BodyModel.Trunk.Segments.SacrumSeg,
+//        &Main.HumanModel.BodyModel.Trunk.Segments.PelvisSeg,
+//        &Main.HumanModel.BodyModel.Trunk.Segments.L5Seg,
+//        &Main.HumanModel.BodyModel.Trunk.Segments.L4Seg,
+//        &Main.HumanModel.BodyModel.Trunk.Segments.L3Seg,
+//        &Main.HumanModel.BodyModel.Trunk.Segments.L2Seg,
+//        &Main.HumanModel.BodyModel.Trunk.Segments.L1Seg
+//        );
+//      AnyObjectPtrArray pArrJntReactions = arrcat(
+//        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnyRevoluteJoint"),
+//        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnySphericalJoint"),
+//        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.PatellaMovement.Reaction", "AnyKinEqSimpleDriver"),
+//        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SacrumPelvis.Constraints.Reaction,
+//        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Constraints.Reaction,
+//        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Constraints.Reaction,
+//        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L3L4.Constraints.Reaction,
+//        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L2L3.Constraints.Reaction,
+//        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L1L2.Constraints.Reaction,
+//        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.T12L1.Constraints.Reaction
+//        );  
+//      IncludeForces = arrcat(
+//      ObjSearch("Main.HumanModel.BodyModel.*.Leg.Mus.*", "AnyMuscle"),
+//      ObjSearch("Main.HumanModel.BodyModel.Trunk.Muscles.*.*.*", "AnyMuscle"),
+//      ObjSearchRecursive("Main.HumanModel.BodyModel.Trunk.JointMuscles", "*", "AnyMuscle"),
+//      pArrJntReactions
+//      );
+//      AnyVec3 Mlocal = M*Main.HumanModel.BodyModel.Trunk.Segments.L1Seg.T12L1JntNode.RotNode.Axes;
+//    };
+
+    
+     
+    
+  }; // End of Thorax
+  
+  AnyFolder Lumbar = {
+    
+    // Contact Forces
+    
+    AnyForceMomentMeasure2 ContactForceOnL1 = {
+      AnyRefFrame &refT12L1joint = Main.HumanModel.BodyModel.Trunk.Segments.L1Seg.T12L1JntNode.RotNode; // You can make any number of these objects!
+      AnySeg &refL1seg = Main.HumanModel.BodyModel.Trunk.Segments.L1Seg; // You can make any number of these objects!
+      AnyForceBase &refT12L1constraint = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.T12L1.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.L1Seg.T12L1JntNode.RotNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnL2 = {
+      AnyRefFrame &refL1L2joint = Main.HumanModel.BodyModel.Trunk.Segments.L2Seg.L1L2JntNode.RotNode; // You can make any number of these objects!
+      AnySeg &refL2seg = Main.HumanModel.BodyModel.Trunk.Segments.L2Seg; // You can make any number of these objects!
+      AnyForceBase &refL1L2constraint = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L1L2.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.L2Seg.L1L2JntNode.RotNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnL3 = {
+      AnyRefFrame &refL2L3joint = Main.HumanModel.BodyModel.Trunk.Segments.L3Seg.L2L3JntNode.RotNode; // You can make any number of these objects!
+      AnySeg &refL3seg = Main.HumanModel.BodyModel.Trunk.Segments.L3Seg; // You can make any number of these objects!
+      AnyForceBase &refL2L3constraint = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L2L3.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.L3Seg.L2L3JntNode.RotNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnL4 = {
+      AnyRefFrame &refL3L4joint = Main.HumanModel.BodyModel.Trunk.Segments.L4Seg.L3L4JntNode.RotNode; // You can make any number of these objects!
+      AnySeg &refL4seg = Main.HumanModel.BodyModel.Trunk.Segments.L4Seg; // You can make any number of these objects!
+      AnyForceBase &refL3L4constraint = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L3L4.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.L4Seg.L3L4JntNode.RotNode.Axes;
+      
+    };
+    
+    AnyForceMomentMeasure2 ContactForceOnL5 = {
+      AnyRefFrame &refL4L5joint = Main.HumanModel.BodyModel.Trunk.Segments.L5Seg.L4L5JntNode.RotNode; // You can make any number of these objects!
+      AnySeg &refL5seg = Main.HumanModel.BodyModel.Trunk.Segments.L5Seg; // You can make any number of these objects!
+      AnyForceBase &refL4L5constraint = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Constraints.Reaction; // You can make any number of these objects!
+      AnyFloat Flocal = F * Main.HumanModel.BodyModel.Trunk.Segments.L5Seg.L4L5JntNode.RotNode.Axes;
+      
+    };
+    
+    // Net Moments    
+            
+    AnyForceMomentMeasure2 NetMomentAtT12L1 = {
+      AnyRefFrame &ref = Main.HumanModel.BodyModel.Trunk.Segments.L1Seg.T12L1JntNode.RotNode;
+        IncludeSegments = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Seg.*", "AnySeg"),
+        &Main.HumanModel.BodyModel.Trunk.Segments.SacrumSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.PelvisSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L5Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L4Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L3Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L2Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L1Seg
+        );
+      AnyObjectPtrArray pArrJntReactions = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnyRevoluteJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnySphericalJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.PatellaMovement.Reaction", "AnyKinEqSimpleDriver"),
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SacrumPelvis.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L3L4.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L2L3.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L1L2.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.T12L1.Constraints.Reaction
+        );  
+      IncludeForces = arrcat(
+      ObjSearch("Main.HumanModel.BodyModel.*.Leg.Mus.*", "AnyMuscle"),
+      ObjSearch("Main.HumanModel.BodyModel.Trunk.Muscles.*.*.*", "AnyMuscle"),
+      ObjSearchRecursive("Main.HumanModel.BodyModel.Trunk.JointMuscles", "*", "AnyMuscle"),
+      pArrJntReactions
+      );
+      AnyVec3 Mlocal = M*Main.HumanModel.BodyModel.Trunk.Segments.L1Seg.T12L1JntNode.RotNode.Axes;
+    };
+    
+        
+    AnyForceMomentMeasure2 NetMomentAtL1L2 = {
+      AnyRefFrame &ref = Main.HumanModel.BodyModel.Trunk.Segments.L2Seg.L1L2JntNode.RotNode;
+        IncludeSegments = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Seg.*", "AnySeg"),
+        &Main.HumanModel.BodyModel.Trunk.Segments.SacrumSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.PelvisSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L5Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L4Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L3Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L2Seg
+        );
+      AnyObjectPtrArray pArrJntReactions = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnyRevoluteJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnySphericalJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.PatellaMovement.Reaction", "AnyKinEqSimpleDriver"),
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SacrumPelvis.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L3L4.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L2L3.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L1L2.Constraints.Reaction
+        );  
+      IncludeForces = arrcat(
+      ObjSearch("Main.HumanModel.BodyModel.*.Leg.Mus.*", "AnyMuscle"),
+      ObjSearch("Main.HumanModel.BodyModel.Trunk.Muscles.*.*.*", "AnyMuscle"),
+      ObjSearchRecursive("Main.HumanModel.BodyModel.Trunk.JointMuscles", "*", "AnyMuscle"),
+      pArrJntReactions
+      );
+      AnyVec3 Mlocal = M*Main.HumanModel.BodyModel.Trunk.Segments.L2Seg.L1L2JntNode.RotNode.Axes;
+    };
+
+    
+    AnyForceMomentMeasure2 NetMomentAtL2L3 = {
+      AnyRefFrame &ref = Main.HumanModel.BodyModel.Trunk.Segments.L3Seg.L2L3JntNode.RotNode;
+        IncludeSegments = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Seg.*", "AnySeg"),
+        &Main.HumanModel.BodyModel.Trunk.Segments.SacrumSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.PelvisSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L5Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L4Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L3Seg
+        );
+      AnyObjectPtrArray pArrJntReactions = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnyRevoluteJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnySphericalJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.PatellaMovement.Reaction", "AnyKinEqSimpleDriver"),
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SacrumPelvis.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L3L4.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L2L3.Constraints.Reaction        
+        );  
+      IncludeForces = arrcat(
+      ObjSearch("Main.HumanModel.BodyModel.*.Leg.Mus.*", "AnyMuscle"),
+      ObjSearch("Main.HumanModel.BodyModel.Trunk.Muscles.*.*.*", "AnyMuscle"),
+      ObjSearchRecursive("Main.HumanModel.BodyModel.Trunk.JointMuscles", "*", "AnyMuscle"),
+      pArrJntReactions
+      );
+      AnyVec3 Mlocal = M*Main.HumanModel.BodyModel.Trunk.Segments.L3Seg.L2L3JntNode.RotNode.Axes;
+    };
+
+    
+    AnyForceMomentMeasure2 NetMomentAtL3L4 = {
+      AnyRefFrame &ref = Main.HumanModel.BodyModel.Trunk.Segments.L4Seg.L3L4JntNode.RotNode;
+        IncludeSegments = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Seg.*", "AnySeg"),
+        &Main.HumanModel.BodyModel.Trunk.Segments.SacrumSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.PelvisSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L5Seg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L4Seg
+        );
+      AnyObjectPtrArray pArrJntReactions = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnyRevoluteJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnySphericalJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.PatellaMovement.Reaction", "AnyKinEqSimpleDriver"),
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SacrumPelvis.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L3L4.Constraints.Reaction
+        );  
+      IncludeForces = arrcat(
+      ObjSearch("Main.HumanModel.BodyModel.*.Leg.Mus.*", "AnyMuscle"),
+      ObjSearch("Main.HumanModel.BodyModel.Trunk.Muscles.*.*.*", "AnyMuscle"),
+      ObjSearchRecursive("Main.HumanModel.BodyModel.Trunk.JointMuscles", "*", "AnyMuscle"),
+      pArrJntReactions
+      );
+      AnyVec3 Mlocal = M*Main.HumanModel.BodyModel.Trunk.Segments.L4Seg.L3L4JntNode.RotNode.Axes;
+    };
+    
+   
+    AnyForceMomentMeasure2 NetMomentAtL4L5 = {
+      AnyRefFrame &ref = Main.HumanModel.BodyModel.Trunk.Segments.L5Seg.L4L5JntNode.RotNode;
+        IncludeSegments = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Seg.*", "AnySeg"),
+        &Main.HumanModel.BodyModel.Trunk.Segments.SacrumSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.PelvisSeg,
+        &Main.HumanModel.BodyModel.Trunk.Segments.L5Seg
+        );
+      AnyObjectPtrArray pArrJntReactions = arrcat(
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnyRevoluteJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.*.Constraints.Reaction", "AnySphericalJoint"),
+        ObjSearch("Main.HumanModel.BodyModel.*.Leg.Jnt.PatellaMovement.Reaction", "AnyKinEqSimpleDriver"),
+        &Main.HumanModel.BodyModel.Left.Leg.Jnt.PatellaFemur.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Left.Leg.Jnt.PatellaMovement.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.SacrumPelvis.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Constraints.Reaction,
+        &Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L4L5.Constraints.Reaction
+        );  
+      IncludeForces = arrcat(
+      ObjSearch("Main.HumanModel.BodyModel.*.Leg.Mus.*", "AnyMuscle"),
+      ObjSearch("Main.HumanModel.BodyModel.Trunk.Muscles.*.*.*", "AnyMuscle"),
+      ObjSearchRecursive("Main.HumanModel.BodyModel.Trunk.JointMuscles", "*", "AnyMuscle"),
+      pArrJntReactions
+      );
+      AnyVec3 Mlocal = M*Main.HumanModel.BodyModel.Trunk.Segments.L5Seg.L4L5JntNode.RotNode.Axes;
+    };
+      
+    
+// The code below is the new definition for Joint Contact Force in AMMR4
+
+    /*
+    AnyForceMomentMeasure T12L1JointContactForce = {
+    //IncludeForces = ;
+    //RefPoint = ;
+      AnyForceBase &refT12L1joint = Main.HumanModel.BodyModel.Trunk.JointsLumbar.T12L1Jnt.Constraints.Reaction; // You can make any number of these objects!
+      AnyRefFrame &refL1seg = Main.HumanModel.BodyModel.Trunk.SegmentsLumbar.L1Seg.T12L1JntNode; // You can make any number of these objects!
+      AnyVec3 T12L1JointContactForce = Main.Studies.InverseDynamicStudy.OncoEngAnalysis.Lumbar.T12L1JointContactForce.F*Main.HumanModel.BodyModel.Trunk.SegmentsLumbar.L1Seg.T12L1JntNode.Axes;
+    };
+    */
+    
+
+// This code below is an example of declaring Net Moment of the joint, taken from lower limbs for hip and knee. Not to be declared here, but just an example!
+
+    /*
+    AnyForceMomentMeasure2 KneeNetMoment = 
+    {
+      AnyRefFrame &ref = ..Seg.Thigh.KneeJoint.RotNode;
+      //RefPoint = &..Seg.Thigh.KneeJoint.RotNode;
+      IncludeSegments = 
+      {
+        &..Seg.Shank, &..Seg.Foot, &..Seg.Talus    
+      };
+      AnyObjectPtrArray pArrJntReactions = 
+      {
+        &..Jnt.Knee.Constraints.Reaction, 
+        &..Jnt.Ankle.Constraints.Reaction, 
+        &..Jnt.SubTalar.Constraints.Reaction, 
+        &..Jnt.PatellaMovement.Reaction
+      };  
+      #include  "LegMusclePtrArrays.any"
+      IncludeForces = arrcat(pArrTargetMuscles,pArrJntReactions);  
+    };
+    
+    AnyForceMomentMeasure2 HipNetMoment = 
+    {
+      AnyRefFrame &ref = ..Seg.Pelvis.HipJoint.RotNode;
+      //RefPoint = &..Seg.Pelvis.HipJoint.RotNode;
+      IncludeSegments = 
+      {
+        &..Seg.Shank, &..Seg.Foot, &..Seg.Thigh, &..Seg.Patella, &..Seg.Talus    
+      };
+      AnyObjectPtrArray pArrJntReactions = 
+      {
+        &..Jnt.Hip.Constraints.Reaction,
+        &..Jnt.Knee.Constraints.Reaction,
+        &..Jnt.Ankle.Constraints.Reaction,
+        &..Jnt.SubTalar.Constraints.Reaction,
+        &..Jnt.PatellaFemur.Constraints.Reaction,
+        &..Jnt.PatellaMovement.Reaction
+      };  
+      IncludeForces = arrcat(
+      ObjSearch("..Mus.*", "AnyMuscle"), 
+      ObjSearch("..TrunkMuscles.PsoasMajor.*", "AnyMuscle"),
+      ObjSearchRecursive("..JointMuscles", "*", "AnyMuscle"),
+      pArrJntReactions
+      );
+    };
+    */
+    
+// This code below is an example of declaring NetMuscleMoment of the joint, taken from lower limbs for hip and knee. Not to be declared here, but just an example!    
+       
+    /*    
+    AnyForceMomentMeasure2 KneeNetMomentMuscle = 
+    {
+    AnyRefFrame &ref = ..Seg.Thigh.KneeJoint.RotNode;
+    //RefPoint = &..Seg.Thigh.KneeJoint.RotNode; 
+    IncludeSegments = 
+    {
+    &..Seg.Shank, &..Seg.Foot, &..Seg.Talus    
+    };   
+    AnyObjectPtrArray pArrJntReactions = {
+    &..Jnt.PatellaMovement.Reaction
+    };  
+    IncludeForces = arrcat(
+    ObjSearch("..Mus.*", "AnyMuscle"), 
+    ObjSearch("..TrunkMuscles.PsoasMajor.*", "AnyMuscle"),
+    ObjSearchRecursive("..JointMuscles", "*", "AnyMuscle"),
+    pArrJntReactions
+    );
+    
+    AnyVec3 Mlocal=M*ref.Axes;
+    AnyVar MKneeFlexion=Mlocal[2];
+    };
+    */
+
+    
+    
+    // Folder for drawing force vector //
+    
+    AnyDrawVector drawforceContactForceOnL2 = {
+      Vec = .ContactForceOnL2.Flocal/1000;
+      Line =  {
+        Style = Line3DStyleFull;
+        Thickness = 0.025;
+        RGB = {0.5, 0, 0.5};
+      };
+      GlobalCoord=Off;
+      AnyRefNode &L2Node = Main.HumanModel.BodyModel.Trunk.Segments.L2Seg.L1L2JntNode;
+    };
+    
+  }; // End of Lumbar
+  
+};
+
+
+// Folder for saving selected output into .csv file
+
+AnyOutputFile OncoEngLoadingOutputFileCSV = {
+  FileName = Main.Studies.InverseDynamicStudy.ModelEnvironmentConnection.JointsAndDrivers.BaseFileName + "OncoEngSelectedLoadingOutputs.csv";
+  Search = {"Main.HumanModel.BodyModel.SelectedOutput.OncoEng.ThoracicLoading.Thoracic*.*","Main.HumanModel.BodyModel.SelectedOutput.OncoEng.LumbarLoading.Lumbar*.*"}; 
+  
+};
+
+// This code is to draw the segment reference frame as wellas the vector force. Not to be declared here, but just an example!
+
+/*
+  AnySeg L5Seg = {
+
+    AnyRefNode L4L5JntNode = {sRel = .Scale(.StdPar.L4L5JntNode_pos); 
+    AnyRefNode RotNode = {};
+    //OncoEng
+    AnyDrawNodes DrwNode = {ScaleXYZ = 0.003*{1,1,1};RGB = {1,0,0};};
+    AnyDrawRefFrame L4L5JointReactionMeasureFrame = {
+      Visible = On;
+      RGB = {0.91796875, 0.76953125, 0.06640625};
+      ScaleXYZ = {1.0, 1.0, 1.0};
+    };
+    
+    
+    AnyDrawRefFrame drw = {RGB = {1,0,0}; ScaleXYZ={1,1,1};};
+    //OncoEng
+  };
+
+*/
