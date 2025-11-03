@@ -1,27 +1,27 @@
-// EXAMPLE of MarkerProcol file for the plug-in-gait protocol. 
+// EXAMPLE of MarkerProcol file for the plug-in-gait protocol.
 
 #define _LPSI
 #define _RPSI
-#define _RASI 
-#define _LASI 
-#define _RFHD 
-#define _LFHD 
-#define _RBHD 
-#define _LBHD 
-#define _STRN 
-#define _CLAV 
+#define _RASI
+#define _LASI
+#define _RFHD
+#define _LFHD
+#define _RBHD
+#define _LBHD
+#define _STRN
+#define _CLAV
 #define _L5
 #define _L4
 #define _L3
 #define _L2
 #define _L1
- // #define _T11
+// #define _T11
 #define _T7
- // #define _T3
- // #define _T10 
-#define _C7 
-#define _RTHI 
-#define _RKNE 
+// #define _T3
+// #define _T10
+#define _C7
+#define _RTHI
+#define _RKNE
 #define _RTIB
 #define _RANK
 #define _RTOE
@@ -34,7 +34,7 @@
 #define _LTOE
 #define _LHEE
 #define _LMT5
- 
+
 #define _RSHO
 #define _LSHO
 #define _RUPA
@@ -54,7 +54,7 @@
 
 #ifdef _LPSI
 // Marker on the Left Posterior Superior Iliac
-CreateMarkerDriver LPSI ( 
+CreateMarkerDriver LPSI (
 UseC3DWeightResiduals = ON,
 MarkerPlacement=Trunk.Segments.PelvisSeg,
 PlaceMarkerAt=Left.PSIS,
@@ -105,19 +105,19 @@ UseC3DWeightResiduals=ON
 #ifdef _RFHD
 // Marker on the Right Front Head
 CreateMarkerDriver RFHD (
-MarkerPlacement=Trunk.Segments.SkullSeg, 
+MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
 OptX=OFF,OptY=OFF,OptZ=OFF,
 UseC3DWeightResiduals=ON
 ) = {
-  sRelOpt = {0.11,0.06,0.045}; 
+  sRelOpt = {0.11,0.06,0.045};
 };
 #endif
 
 #ifdef _LFHD
 // Marker on the Left Front Head
 CreateMarkerDriver LFHD (
-MarkerPlacement=Trunk.Segments.SkullSeg, 
+MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
 OptX=OFF,OptY=OFF,OptZ=OFF,
 UseC3DWeightResiduals=ON
@@ -129,7 +129,7 @@ UseC3DWeightResiduals=ON
 #ifdef _RBHD
 // Marker on the Right Back Head
 CreateMarkerDriver RBHD (
-MarkerPlacement=Trunk.Segments.SkullSeg, 
+MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
 OptX=ON ,OptY=OFF ,OptZ=ON,
 UseC3DWeightResiduals=ON
@@ -141,7 +141,7 @@ UseC3DWeightResiduals=ON
 #ifdef _LBHD
 // Marker on the Left Back Head
 CreateMarkerDriver LBHD (
-MarkerPlacement=Trunk.Segments.SkullSeg,   
+MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
 OptX=ON,OptY=OFF,OptZ= ON,
 WeightX=1.0,WeightY=1.0,WeightZ=1.0,
@@ -156,9 +156,9 @@ UseC3DWeightResiduals=ON
 #ifdef _STRN
 // Marker on the Sternum
 CreateMarkerDriver STRN (
-MarkerPlacement=Trunk.Segments.SternumSeg, 
+MarkerPlacement = Trunk.Segments.SternumSeg,
 PlaceMarkerAt=MoCapMarkerFrameAMMR24,
-OptX=ON,OptY=ON,OptZ=OFF,  
+OptX = ON,OptY = ON,OptZ = OFF,
 WeightX=1,WeightY=1,WeightZ=1,
 UseC3DWeightResiduals=ON
 ) = {
@@ -169,9 +169,9 @@ UseC3DWeightResiduals=ON
 #ifdef _CLAV
 // Marker on the Clavicle
 CreateMarkerDriver CLAV (
-MarkerPlacement=Trunk.Segments.SternumSeg, 
+MarkerPlacement = Trunk.Segments.SternumSeg,
 PlaceMarkerAt=ij,
-OptX=ON,OptY=OFF,OptZ=OFF,  
+OptX = ON,OptY = OFF,OptZ = OFF,
 WeightX=1,WeightY=1,WeightZ=1,
 UseC3DWeightResiduals=ON
 ) = {
@@ -183,7 +183,7 @@ UseC3DWeightResiduals=ON
 // Marker on the Lumbar Vertebra L5
 CreateMarkerDriver L5 (
 MarkerName= L5,
-MarkerPlacement=Trunk.Segments.L5Seg, 
+MarkerPlacement = Trunk.Segments.L5Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -197,7 +197,7 @@ OptX=ON,OptY=ON,OptZ=OFF
 // Marker on the Lumbar Vertebra L4
 CreateMarkerDriver L4 (
 MarkerName= L4,
-MarkerPlacement=Trunk.Segments.L4Seg, 
+MarkerPlacement = Trunk.Segments.L4Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -211,7 +211,7 @@ OptX=ON,OptY=ON,OptZ=OFF
 // Marker on the Lumbar Vertebra L3
 CreateMarkerDriver L3 (
 MarkerName= L3,
-MarkerPlacement=Trunk.Segments.L3Seg, 
+MarkerPlacement = Trunk.Segments.L3Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -225,7 +225,7 @@ OptX=ON,OptY=ON,OptZ=OFF
 // Marker on the Lumbar Vertebra L2
 CreateMarkerDriver L2 (
 MarkerName= L2,
-MarkerPlacement=Trunk.Segments.L2Seg, 
+MarkerPlacement = Trunk.Segments.L2Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -239,7 +239,7 @@ OptX=ON,OptY=ON,OptZ=OFF
 // Marker on the Lumbar Vertebra L1
 CreateMarkerDriver L1 (
 MarkerName= L1,
-MarkerPlacement=Trunk.Segments.L1Seg, 
+MarkerPlacement = Trunk.Segments.L1Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -252,8 +252,8 @@ OptX=ON,OptY=ON,OptZ=OFF
 #ifdef _T11
 // Marker on the Thoracic Vertebra T11
 CreateMarkerDriver T11 (
-MarkerName= T11,  
-MarkerPlacement=Trunk.Segments.T11Seg, 
+MarkerName= T11,
+MarkerPlacement = Trunk.Segments.T11Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -266,8 +266,8 @@ OptX=ON,OptY=ON,OptZ=OFF
 #ifdef _T7
 // Marker on the Thoracic Vertebra T7
 CreateMarkerDriver T7 (
-MarkerName= T7,  
-MarkerPlacement=Trunk.Segments.T7Seg, 
+MarkerName= T7,
+MarkerPlacement = Trunk.Segments.T7Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -280,8 +280,8 @@ OptX=ON,OptY=ON,OptZ=OFF
 #ifdef _T3
 // Marker on the Thoracic Vertebra T3
 CreateMarkerDriver T3 (
-MarkerName= T3,  
-MarkerPlacement=Trunk.Segments.T3Seg, 
+MarkerName= T3,
+MarkerPlacement = Trunk.Segments.T3Seg,
 // SCOLIOSIS_DRIVERS_SETUP
 //OptX=ON,OptY=ON,OptZ=ON
 OptX=ON,OptY=ON,OptZ=OFF
@@ -294,7 +294,7 @@ OptX=ON,OptY=ON,OptZ=OFF
 #ifdef _T10
 // Marker on the Thoracic Vertebra 10
 CreateMarkerDriver T10 (
-MarkerPlacement=Trunk.Segments.T10Seg, 
+MarkerPlacement = Trunk.Segments.T10Seg,
 PlaceMarkerAt=MoCapMarkerFrameAMMR24,
 OptX=OFF,OptY=ON,OptZ=OFF,
 UseC3DWeightResiduals=ON
@@ -308,7 +308,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver C7 (
 MarkerPlacement=Trunk.Segments.T1Seg,
 PlaceMarkerAt=MoCapMarkerFrameAMMR24,
-OptX=OFF,OptY=ON,OptZ=OFF,  
+OptX = OFF,OptY = ON,OptZ = OFF,
 PlaceMarkerAt = T1C7JntNode,
 UseC3DWeightResiduals=ON
 ) = {
@@ -320,7 +320,7 @@ UseC3DWeightResiduals=ON
 //// Lower Extremity Markers
 #ifdef _RTHI
 // Marker on the Right Thigh
-CreateMarkerDriver RTHI ( 
+CreateMarkerDriver RTHI (
 OptX=ON,OptY=ON,OptZ=ON,
 MarkerPlacement =Right.Leg.Seg.Thigh,
 PlaceMarkerAt=AnatomicalFrame,
@@ -357,7 +357,7 @@ UseC3DWeightResiduals=ON
 
 #ifdef _RANK
 // Marker on the Right Lateral Ankle
-CreateMarkerDriver RANK ( 
+CreateMarkerDriver RANK (
 MarkerName= RANK ,
 MarkerPlacement=Right.Leg.Seg.Shank,
 PlaceMarkerAt = LateralMalleolus,
@@ -399,9 +399,9 @@ UseC3DWeightResiduals=ON
 // Marker on the Right Metatarsel 5
 #ifdef _RMT5
 CreateMarkerDriver RMT5 (
-MarkerPlacement=Right.Leg.Seg.Foot, 
+MarkerPlacement = Right.Leg.Seg.Foot,
 PlaceMarkerAt = MetatarsalJoint5Node,
-OptX=OFF,OptY=OFF,OptZ=OFF,  
+OptX = OFF,OptY = OFF,OptZ = OFF,
 WeightX=1.0,WeightY=1.0,WeightZ=1.0,
 UseC3DWeightResiduals=ON
 ) = {
@@ -411,20 +411,20 @@ UseC3DWeightResiduals=ON
 
 #ifdef _LTHI
 // Marker on the Left Thigh
-CreateMarkerDriver LTHI ( 
+CreateMarkerDriver LTHI (
 MarkerName= LTHI ,
 MarkerPlacement=Left.Leg.Seg.Thigh,
 PlaceMarkerAt=AnatomicalFrame,
 OptX=ON,OptY=ON,OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
-  sRelOpt = {0.0, -0.28, -0.1}; 
+  sRelOpt = {0.0, -0.28, -0.1};
 };
 #endif
 
 #ifdef _LKNE
 // Marker on the Left Knee
-CreateMarkerDriver LKNE ( 
+CreateMarkerDriver LKNE (
 MarkerName= LKNE ,
 MarkerPlacement=Left.Leg.Seg.Thigh,
 PlaceMarkerAt = EpicondylusFemorisLateralis,
@@ -487,9 +487,9 @@ UseC3DWeightResiduals=ON
 #ifdef _LMT5
 // Marker on the Right Metatarsel 5
 CreateMarkerDriver LMT5 (
-MarkerPlacement=Left.Leg.Seg.Foot, 
+MarkerPlacement = Left.Leg.Seg.Foot,
 PlaceMarkerAt = MetatarsalJoint5Node,
-OptX=OFF,OptY=OFF,OptZ=OFF,  
+OptX = OFF,OptY = OFF,OptZ = OFF,
 WeightX=1.0,WeightY=1.0,WeightZ=1.0,
 UseC3DWeightResiduals=ON
 ) = {
@@ -534,7 +534,7 @@ PlaceMarkerAt=AnatomicalFrame,
 OptX=ON,OptY=ON,OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
-  sRelOpt ={0.03,-0.24,0.01}; 
+  sRelOpt ={0.03,-0.24,0.01};
 };
 #endif
 
@@ -547,7 +547,7 @@ PlaceMarkerAt=AnatomicalFrame,
 OptX=ON,OptY=ON,OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
-  sRelOpt ={-0.03,-0.19,0.01}; 
+  sRelOpt ={-0.03,-0.19,0.01};
 };
 #endif
 
@@ -619,7 +619,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver RWRB (
 MarkerPlacement=Right.ShoulderArm.Seg.Radius,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=ON ,OptY=ON,OptZ=OFF,  
+OptX = ON ,OptY = ON,OptZ = OFF,
 WeightX=0.1,WeightY=0.1,WeightZ=0.1,
 UseC3DWeightResiduals=ON
 ) = {
@@ -644,7 +644,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver LWRB (
 MarkerPlacement=Left.ShoulderArm.Seg.Radius,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=ON  ,OptY=ON ,OptZ=OFF,  
+OptX = ON  ,OptY = ON ,OptZ = OFF,
 WeightX=0.1,WeightY=0.1,WeightZ=0.1,
 UseC3DWeightResiduals=ON
 ) = {
@@ -656,7 +656,7 @@ UseC3DWeightResiduals=ON
 #ifdef _RFIN
 // Marker on the Right Finger
 CreateMarkerDriver RFIN (
-MarkerPlacement=Right.ShoulderArm.Seg.Hand, 
+MarkerPlacement = Right.ShoulderArm.Seg.Hand,
 PlaceMarkerAt=AnatomicalFrame,
 OptX=OFF ,OptY=OFF,OptZ=OFF,
 UseC3DWeightResiduals=ON

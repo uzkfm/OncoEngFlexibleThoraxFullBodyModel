@@ -32,7 +32,7 @@
 #ifdef EXCLUDE_LBHD
 #undef _LBHD
 #endif
- 
+
 #ifdef EXCLUDE_STRN
 #undef _STRN
 #endif
@@ -56,7 +56,7 @@
 #ifdef EXCLUDE_L2
 #undef _L2
 #endif
- 
+
 #ifdef EXCLUDE_L1
 #undef _L1
 #endif
@@ -92,11 +92,11 @@
 #ifdef EXCLUDE_RHEE
 #undef _RHEE
 #endif
-    
+
 #ifdef EXCLUDE_RMT5
 #undef _RMT5
 #endif
-   
+
 #ifdef EXCLUDE_LTHI
 #undef _LTHI
 #endif
@@ -136,19 +136,19 @@
 #ifdef EXCLUDE_RUPA
 #undef _RUPA
 #endif
- 
+
 #ifdef EXCLUDE_LUPA
 #undef _LUPA
 #endif
- 
+
 #ifdef EXCLUDE_RELB
 #undef _RELB
 #endif
- 
+
 #ifdef EXCLUDE_LELB
 #undef _LELB
 #endif
- 
+
 #ifdef EXCLUDE_RFRA
 #undef _RFRA
 #endif
