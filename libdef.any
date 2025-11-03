@@ -1,0 +1,22 @@
+
+#ifndef ANYBODY_PATH_OUTPUT
+// If a local  Output folder exists, use it
+#ifpathexists "Output/"
+#path ANYBODY_PATH_OUTPUT "Outputs/"
+#else
+#path ANYBODY_PATH_OUTPUT "../../../../../../OneDrive - University of Leeds/Research Project - OncoEng/Research OncoEng Data/OncoEng Normal Cohort/03 AnyBody Folder/Output HDF/"+SUBJECT+"/"
+#endif
+#endif
+
+
+// Place an "libdef.any" file in the parent folder which links to the correct AMMR folder
+#include "../libdef.any"
+
+// Check that the correct AMMR version is being used
+#if AMMR_VERSION != "4.0.0-beta-OncoEng"
+// The model required the specific branch:  https://github.com/AnyBody/AMMR4-Beta/tree/OncoEng-branch
+// Once the model is updated to use the newest 'unmodified' AMMR this can be removed.
+#error "Wrong AMMR version - please use the OncoEng branch of AMMR 4.0.0-beta"
+#endif
+
+

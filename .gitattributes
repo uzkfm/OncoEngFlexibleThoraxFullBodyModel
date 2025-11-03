@@ -1,0 +1,36 @@
+# Disable automatic git conversion of line endings on windows
+* -text 
+
+# AnyBody files
+# ============
+*.anysurf3 binary
+*.anysurf4 binary
+
+*.md linguist-detectable
+
+# Binary files
+# ============
+*.pyc    binary export-ignore
+*.pyo    binary export-ignore
+
+
+
+# Export ignored files files
+.gitattributes export-ignore  
+.gitignore export-ignore
+.gitkeep export-ignore
+.github export-ignore
+.vscode export-ignore
+.devcontainer export-ignore
+test_*.any export-ignore
+pytest.ini export-ignore
+Body/AAUHuman/BuildTools export-ignore
+Tests export-ignore
+Docs export-ignore
+Body\AAUHuman\BodyModels\GenericBodyModel\ammr-beta.any export-ignore
+Body\AAUHuman\BodyModels\GenericBodyModel\git_info.py export-ignore
+CHANGELOG.md export-ignore
+pixi.lock merge=binary linguist-language=YAML linguist-generated=true export-ignore
+pixi.toml export-ignore
+.editorconfig export-ignore
+

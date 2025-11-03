@@ -1,0 +1,182 @@
+// File for excluding markers again based on define switches
+
+
+#ifdef EXCLUDE_LPSI
+#undef _LPSI
+#endif
+
+#ifdef EXCLUDE_RPSI
+#undef _RPSI
+#endif
+
+#ifdef EXCLUDE_RASI
+#undef _RASI
+#endif
+
+#ifdef EXCLUDE_LASI
+#undef _LASI
+#endif
+
+#ifdef EXCLUDE_RFHD
+#undef _RFHD
+#endif
+
+#ifdef EXCLUDE_LFHD
+#undef _LFHD
+#endif
+
+#ifdef EXCLUDE_RBHD
+#undef _RBHD
+#endif
+
+#ifdef EXCLUDE_LBHD
+#undef _LBHD
+#endif
+ 
+#ifdef EXCLUDE_STRN
+#undef _STRN
+#endif
+
+#ifdef EXCLUDE_CLAV
+#undef _CLAV
+#endif
+
+#ifdef EXCLUDE_L5
+#undef _L5
+#endif
+
+#ifdef EXCLUDE_L4
+#undef _L4
+#endif
+
+#ifdef EXCLUDE_L3
+#undef _L3
+#endif
+
+#ifdef EXCLUDE_L2
+#undef _L2
+#endif
+ 
+#ifdef EXCLUDE_L1
+#undef _L1
+#endif
+
+#ifdef EXCLUDE_T7
+#undef _T7
+#endif
+
+#ifdef EXCLUDE_C7
+#undef _C7
+#endif
+
+#ifdef EXCLUDE_RTHI
+#undef _RTHI
+#endif
+
+#ifdef EXCLUDE_RKNE
+#undef _RKNE
+#endif
+
+#ifdef EXCLUDE_RTIB
+#undef _RTIB
+#endif
+
+#ifdef EXCLUDE_RANK
+#undef _RANK
+#endif
+
+#ifdef EXCLUDE_RTOE
+#undef _RTOE
+#endif
+
+#ifdef EXCLUDE_RHEE
+#undef _RHEE
+#endif
+    
+#ifdef EXCLUDE_RMT5
+#undef _RMT5
+#endif
+   
+#ifdef EXCLUDE_LTHI
+#undef _LTHI
+#endif
+
+#ifdef EXCLUDE_LKNE
+#undef _LKNE
+#endif
+
+#ifdef EXCLUDE_LTIB
+#undef _LTIB
+#endif
+
+#ifdef EXCLUDE_LANK
+#undef _LANK
+#endif
+
+#ifdef EXCLUDE_LTOE
+#undef _LTOE
+#endif
+
+#ifdef EXCLUDE_LHEE
+#undef _LHEE
+#endif
+
+#ifdef EXCLUDE_LMT5
+#undef _LMT5
+#endif
+
+#ifdef EXCLUDE_RSHO
+#undef _RSHO
+#endif
+
+#ifdef EXCLUDE_LSHO
+#undef _LSHO
+#endif
+
+#ifdef EXCLUDE_RUPA
+#undef _RUPA
+#endif
+ 
+#ifdef EXCLUDE_LUPA
+#undef _LUPA
+#endif
+ 
+#ifdef EXCLUDE_RELB
+#undef _RELB
+#endif
+ 
+#ifdef EXCLUDE_LELB
+#undef _LELB
+#endif
+ 
+#ifdef EXCLUDE_RFRA
+#undef _RFRA
+#endif
+
+#ifdef EXCLUDE_LFRA
+#undef _LFRA
+#endif
+
+#ifdef EXCLUDE_RWRA
+#undef _RWRA
+#endif
+
+#ifdef EXCLUDE_RWRB
+#undef _RWRB
+#endif
+
+#ifdef EXCLUDE_LWRA
+#undef _LWRA
+#endif
+
+#ifdef EXCLUDE_LWRB
+#undef _LWRB
+#endif
+
+#ifdef EXCLUDE_RFIN
+#undef _RFIN
+#endif
+
+#ifdef EXCLUDE_LFIN
+#undef _LFIN
+#endif
