@@ -42,11 +42,11 @@ Main.ModelSetup.LabSpecificData = {
   Main.HumanModel.BodyModel.Trunk.Segments.L5Seg = {
       //OncoEng
       AnyDrawNodes DrwNode = {ScaleXYZ = 0.003*{1,1,1};RGB = {1,0,0};};
-      AnyDrawRefFrame L4L5JointReactionMeasureFrame = {
-        Visible = On;
-        RGB = {0.91796875, 0.76953125, 0.06640625};
-        ScaleXYZ = {1.0, 1.0, 1.0};
-      };
+//      AnyDrawRefFrame L4L5JointReactionMeasureFrame = {
+//        Visible = On;
+//        RGB = {0.91796875, 0.76953125, 0.06640625};
+//        ScaleXYZ = {1.0, 1.0, 1.0};
+//      };
 
 //      AnyDrawRefFrame drw = {RGB = {1,0,0}; ScaleXYZ={1,1,1};};
       //OncoEng
@@ -73,7 +73,7 @@ Main.ModelSetup.LabSpecificData = {
   // This allows the segment length to be optimized in based on the markers/motion
   OptimizeAnthropometricsOnOff OptimizeAntropometricsOnOff (
   PELVIS_WIDTH = OFF,
-  HEAD_HEIGHT = OFF,
+  NECK_LENGTH = ON,
   TRUNK_HEIGHT= ON,
   RIGHT_THIGH_LENGTH= ON,
   LEFT_THIGH_LENGTH = ON,

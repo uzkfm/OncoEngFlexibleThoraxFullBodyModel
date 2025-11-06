@@ -22,6 +22,7 @@
 #define _C7
 #define _RTHI
 #define _RKNE
+#define _RMKN
 #define _RTIB
 #define _RANK
 #define _RTOE
@@ -29,6 +30,7 @@
 #define _RMT5
 #define _LTHI
 #define _LKNE
+#define _LMKN
 #define _LTIB
 #define _LANK
 #define _LTOE
@@ -41,6 +43,8 @@
 #define _LUPA
 #define _RELB
 #define _LELB
+#define _RMEL
+#define _LMEL
 #define _LFRA
 #define _RFRA
 #define _RWRA
@@ -109,7 +113,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver RFHD (
 MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=OFF,OptY=OFF,OptZ=OFF,
+OptX=OFF,OptY=OFF,OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
   sRelOpt = {0.11,0.06,0.045};
@@ -121,19 +125,22 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver LFHD (
 MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=OFF,OptY=OFF,OptZ=OFF,
+OptX=OFF,OptY=OFF,OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
   sRelOpt = {0.11,0.06,-0.045};
 };
 #endif
 
+
+
+
 #ifdef _RBHD
 // Marker on the Right Back Head
 CreateMarkerDriver RBHD (
 MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=ON ,OptY=OFF ,OptZ=ON,
+OptX=ON ,OptY=ON ,OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
   sRelOpt = {-0.07,0.05,0.08};
@@ -145,7 +152,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver LBHD (
 MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=ON,OptY=OFF,OptZ= ON,
+OptX=ON,OptY=ON,OptZ= ON,
 WeightX=1.0,WeightY=1.0,WeightZ=1.0,
 UseC3DWeightResiduals=ON
 ) = {
@@ -281,12 +288,13 @@ ScaleMarkerPosOnOff=OFF
 #ifdef _RTHI
 // Marker on the Right Thigh
 CreateMarkerDriver RTHI (
+MarkerName=RTHI3,
 OptX=ON,OptY=ON,OptZ=ON,
 MarkerPlacement =Right.Leg.Seg.Thigh,
 PlaceMarkerAt=AnatomicalFrame,
 UseC3DWeightResiduals=ON
 )= {
-  sRelOpt = {0.00, -0.15, 0.1};
+  sRelOpt = {0.0, -0.28, 0.1};
 };
 #endif
 
@@ -302,6 +310,20 @@ UseC3DWeightResiduals=ON
   sRelOpt = {0.00, 0.0, 0.015};
 };
 #endif
+
+#ifdef _RMKN
+// Marker on the Right Knee
+CreateMarkerDriver RMKN (
+MarkerPlacement= Right.Leg.Seg.Thigh,
+PlaceMarkerAt = EpicondylusFemorisMedialis,
+OptX=OFF,OptY=ON,OptZ=OFF,
+WeightX=1.0,WeightY=1.0,WeightZ=1.0,
+UseC3DWeightResiduals=ON
+) = {
+  sRelOpt = {0.00, 0.0, -0.015};
+};
+#endif
+
 
 #ifdef _RTIB
 // Marker on the Right Tibia
@@ -391,6 +413,20 @@ UseC3DWeightResiduals=ON
   sRelOpt = {0.00, -0.0, -0.015};
 };
 #endif
+
+#ifdef _LMKN
+// Marker on the medial Left Knee
+CreateMarkerDriver LMKN (
+MarkerPlacement= Left.Leg.Seg.Thigh,
+PlaceMarkerAt = EpicondylusFemorisMedialis,
+OptX=OFF,OptY=ON,OptZ=OFF,
+WeightX=1.0,WeightY=1.0,WeightZ=1.0,
+UseC3DWeightResiduals=ON
+) = {
+  sRelOpt = {0.00, 0.0, 0.015};
+};
+#endif
+
 
 #ifdef _LTIB
 // Marker on the Left Tibia
@@ -532,6 +568,32 @@ UseC3DWeightResiduals=ON
   sRelOpt = {0,0, -0.015};
 };
 #endif
+
+#ifdef _RMEL
+// Marker on the medial right Elbow
+CreateMarkerDriver RMEL (
+MarkerPlacement=Right.ShoulderArm.Segments.Humerus,
+PlaceMarkerAt=EpicondylusHumerusMedialis,
+OptX=OFF,OptY=OFF,OptZ=OFF,
+UseC3DWeightResiduals=ON
+) = {
+  sRelOpt = {0,0, -0.015};
+};
+#endif
+
+
+#ifdef _LMEL
+// Marker on the medial Left Elbow
+CreateMarkerDriver LMEL (
+MarkerPlacement=Left.ShoulderArm.Segments.Humerus,
+PlaceMarkerAt=EpicondylusHumerusMedialis,
+OptX=OFF,OptY=OFF,OptZ=OFF,
+UseC3DWeightResiduals=ON
+) = {
+  sRelOpt = {0,0, 0.015};
+};
+#endif
+
 
 
 #ifdef _LFRA
