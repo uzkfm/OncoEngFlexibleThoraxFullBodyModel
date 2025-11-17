@@ -67,7 +67,29 @@ Main.ModelSetup.LabSpecificData = {
 
   Gravity = -9.81*{0,0,1};
 
+  
+  // Link head (X,Y,Z) scaling to the distance between front and back 
+  // head markers. 
+  Main.HumanModel.Anthropometrics.SegmentScaleFactors.Head = {
+     LengthScale = DepthScale;
+     WidthScale = DepthScale;
+     DepthScale = 1;
+  };
+  Main.ModelSetup.ParameterIdentification =
+   {
+     AnyDesVar HeadDepth = {
+       Val = Main.HumanModel.Anthropometrics.SegmentScaleFactors.Head.DepthScale;
+       Min = 0.5;
+       Max = 2;
+     };
+   };
 
+ 
+ Main.ModelSetup.TrialSpecificData = {
+   ParameterOptimizationConvergenceTol = 0.005;
+ };
+ 
+ 
   // This adds different segment length as design variables to
   // to the parameter identification study (Main.Studies.ParameterIdentification)
   // This allows the segment length to be optimized in based on the markers/motion
@@ -75,6 +97,7 @@ Main.ModelSetup.LabSpecificData = {
   PELVIS_WIDTH = OFF,
   NECK_LENGTH = ON,
   TRUNK_HEIGHT= ON,
+  TRUNK_WIDTH=OFF,
   RIGHT_THIGH_LENGTH= ON,
   LEFT_THIGH_LENGTH = ON,
   RIGHT_SHANK_LENGTH= ON,

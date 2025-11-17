@@ -62,7 +62,7 @@ CreateMarkerDriver LPSI (
 UseC3DWeightResiduals = ON,
 MarkerPlacement=Trunk.Segments.PelvisSeg,
 PlaceMarkerAt=Left.PSIS,
-OptX=ON, OptY=OFF, OptZ=ON,
+OptX=ON, OptY=ON, OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
   sRelOpt ={-0.020, 0.0, 0.0};
@@ -74,7 +74,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver RPSI (
 MarkerPlacement=Trunk.Segments.PelvisSeg,
 PlaceMarkerAt=Right.PSIS,
-OptX=ON, OptY=OFF, OptZ=ON,
+OptX=ON, OptY=ON, OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
   sRelOpt ={-0.020, 0.0, 0.0};
@@ -107,7 +107,6 @@ UseC3DWeightResiduals=ON
 #endif
 
 //// Head
-
 #ifdef _RFHD
 // Marker on the Right Front Head
 CreateMarkerDriver RFHD (
@@ -140,7 +139,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver RBHD (
 MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=ON ,OptY=ON ,OptZ=ON,
+OptX=OFF ,OptY=ON ,OptZ=ON,
 UseC3DWeightResiduals=ON
 ) = {
   sRelOpt = {-0.07,0.05,0.08};
@@ -152,7 +151,7 @@ UseC3DWeightResiduals=ON
 CreateMarkerDriver LBHD (
 MarkerPlacement = Trunk.Segments.SkullSeg,
 PlaceMarkerAt=AnatomicalFrame,
-OptX=ON,OptY=ON,OptZ= ON,
+OptX=OFF,OptY=ON,OptZ= ON,
 WeightX=1.0,WeightY=1.0,WeightZ=1.0,
 UseC3DWeightResiduals=ON
 ) = {
@@ -181,8 +180,8 @@ WeightX=1,WeightY=1,WeightZ=1
 CreateMarkerDriver CLAV (
 MarkerPlacement=Trunk.Segments.SternumSeg,
 PlaceMarkerAt=ij,
-OptX=OFF,OptY=OFF,OptZ=OFF,
-WeightX=1.0,WeightY=1.0,WeightZ=1.0,
+OptX=ON,OptY=ON,OptZ=OFF,
+WeightX=1.0,WeightY=2,WeightZ=1.0,
 UseC3DWeightResiduals=ON,
 ScaleMarkerPosOnOff=OFF
 ) = {
@@ -197,7 +196,7 @@ MarkerName= L5,
 MarkerPlacement = Trunk.Segments.L5Seg,
 PlaceMarkerAt = SpinousProcess,
 ScaleMarkerPosOnOff=OFF,
-OptX=ON,OptY=ON,OptZ=OFF
+OptX=OFF,OptY=OFF,OptZ=OFF
 ) = {
   sRelOpt = {-0.02, 0.0, 0}; 
 };
@@ -249,7 +248,7 @@ MarkerName= L1,
 MarkerPlacement = Trunk.Segments.L1Seg,
 PlaceMarkerAt = SpinousProcess,
 ScaleMarkerPosOnOff=OFF,
-OptX=ON,OptY=ON,OptZ=OFF
+OptX=OFF,OptY=OFF,OptZ=OFF
 ) = {
   sRelOpt = {-0.02, 0, 0}; 
 };
@@ -263,7 +262,7 @@ MarkerName= T7,
 MarkerPlacement = Trunk.Segments.T7Seg,
 PlaceMarkerAt = SpinousProcess,
 ScaleMarkerPosOnOff=OFF,
-OptX=ON,OptY=ON,OptZ=OFF
+OptX=OFF,OptY=ON,OptZ=OFF
 ) = {
   sRelOpt = {-0.020,0,0};
 };
@@ -275,7 +274,7 @@ OptX=ON,OptY=ON,OptZ=OFF
 CreateMarkerDriver C7 (
 MarkerPlacement=Trunk.Segments.C7Seg,
 PlaceMarkerAt = SpinousProcess,
-OptX=OFF,OptY=ON,OptZ=OFF,
+OptX=OFF,OptY=OFF,OptZ=OFF,
 UseC3DWeightResiduals=ON,
 ScaleMarkerPosOnOff=OFF
 ) = {
@@ -495,12 +494,15 @@ UseC3DWeightResiduals = ON
 #ifdef _RSHO
 CreateMarkerDriver RSHO (
 MarkerPlacement=Right.ShoulderArm.Segments.Clavicula,
-OptX=OFF,OptY=OFF,OptZ=ON,
-WeightX=5,WeightY=5,WeightZ=5,
+OptX=ON,OptY=OFF,OptZ=OFF,
+WeightX=1,WeightY=1,WeightZ=1,
 PlaceMarkerAt = acj,
+// We align the marker direction with acj so the marker is locked in the directions perpendicula 
+// to rotation around sternum. 
+AlignMarkerWith = acj, 
 ScaleMarkerPosOnOff=OFF,
 ) = {
-  sRelOpt = {0.01, 0.025, 0.03};
+  sRelOpt = {0, 0.02, 0};
 };
 #endif
 
@@ -508,12 +510,13 @@ ScaleMarkerPosOnOff=OFF,
 // Marker on the Left Acromio-clavicular joint
 CreateMarkerDriver LSHO (
 MarkerPlacement=Left.ShoulderArm.Segments.Clavicula,
-OptX=OFF,OptY=OFF,OptZ=ON,
-WeightX=5,WeightY=5,WeightZ=5,
+OptX=ON,OptY=OFF,OptZ=OFF,
+WeightX=1,WeightY=1,WeightZ=1,
 PlaceMarkerAt = acj,
+AlignMarkerWith = acj, 
 ScaleMarkerPosOnOff=OFF,
 ) = {
-  sRelOpt = {0.01, 0.025, -0.03};
+  sRelOpt = {0, -0.02, -0.00};
 };
 #endif
 
