@@ -13,7 +13,7 @@
 #include "../libdef.any"
 
 // Check that the correct AMMR version is being used
-#if AMMR_VERSION != "4.0.0-beta-OncoEng2"
+#if AMMR_VERSION != "4.0.0-beta"
 // The model required the specific branch:  https://github.com/AnyBody/AMMR4-Beta/tree/OncoEng-branch
 // Once the model is updated to use the newest 'unmodified' AMMR this can be removed.
 #error "Wrong AMMR version - please use the OncoEng branch of AMMR 4.0.0-beta"

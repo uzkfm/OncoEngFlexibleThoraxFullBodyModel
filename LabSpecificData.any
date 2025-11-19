@@ -42,13 +42,13 @@ Main.ModelSetup.LabSpecificData = {
   Main.HumanModel.BodyModel.Trunk.Segments.L5Seg = {
       //OncoEng
       AnyDrawNodes DrwNode = {ScaleXYZ = 0.003*{1,1,1};RGB = {1,0,0};};
-      AnyDrawRefFrame L4L5JointReactionMeasureFrame = {
-        Visible = On;
-        RGB = {0.91796875, 0.76953125, 0.06640625};
-        ScaleXYZ = {1.0, 1.0, 1.0};
-      };
+//      AnyDrawRefFrame L4L5JointReactionMeasureFrame = {
+//        Visible = On;
+//        RGB = {0.91796875, 0.76953125, 0.06640625};
+//        ScaleXYZ = {1.0, 1.0, 1.0};
+//      };
 
-      AnyDrawRefFrame drw = {RGB = {1,0,0}; ScaleXYZ={1,1,1};};
+//      AnyDrawRefFrame drw = {RGB = {1,0,0}; ScaleXYZ={1,1,1};};
       //OncoEng
 
   };
@@ -62,17 +62,42 @@ Main.ModelSetup.LabSpecificData = {
 
   /////////////////////////////////////////////////////////////////////////
 
+  // Only use a single time step in parameter optimization
+  #define N_STEP_PARAM_OPT 1
 
   Gravity = -9.81*{0,0,1};
 
+  
+  // Link head (X,Y,Z) scaling to the distance between front and back 
+  // head markers. 
+  Main.HumanModel.Anthropometrics.SegmentScaleFactors.Head = {
+     LengthScale = DepthScale;
+     WidthScale = DepthScale;
+     DepthScale = 1;
+  };
+  Main.ModelSetup.ParameterIdentification =
+   {
+     AnyDesVar HeadDepth = {
+       Val = Main.HumanModel.Anthropometrics.SegmentScaleFactors.Head.DepthScale;
+       Min = 0.5;
+       Max = 2;
+     };
+   };
 
+ 
+ Main.ModelSetup.TrialSpecificData = {
+   ParameterOptimizationConvergenceTol = 0.005;
+ };
+ 
+ 
   // This adds different segment length as design variables to
   // to the parameter identification study (Main.Studies.ParameterIdentification)
   // This allows the segment length to be optimized in based on the markers/motion
   OptimizeAnthropometricsOnOff OptimizeAntropometricsOnOff (
-  PELVIS_WIDTH = ON,
-  HEAD_HEIGHT = OFF,
+  PELVIS_WIDTH = OFF,
+  NECK_LENGTH = ON,
   TRUNK_HEIGHT= ON,
+  TRUNK_WIDTH=OFF,
   RIGHT_THIGH_LENGTH= ON,
   LEFT_THIGH_LENGTH = ON,
   RIGHT_SHANK_LENGTH= ON,

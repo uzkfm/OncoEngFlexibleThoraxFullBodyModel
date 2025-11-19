@@ -1,5 +1,9 @@
 Main.ModelSetup.TrialSpecificData =
 {
+  // Custom flag to indicate that this trial is a standing reference trial.
+  // Used in other part of this model to enabled/disable different parts.
+  #define REFERENCE_TRIAL 1
+  
   // This is the name of the trial c3d file without extension.
   // Here we assume the c3d file has the same name as the mainfile directory.
   TrialFileName = MOCAP_NAME_MAINFILEDIR;
@@ -60,17 +64,17 @@ Main.ModelSetup.TrialSpecificData =
 
     Right = {
 
-      HipFlexion = 0;
+      HipFlexion = 5;
       HipAbduction = 0;
       HipExternalRotation = 0;
-      KneeFlexion = 0;
+      KneeFlexion = 5;
       AnklePlantarFlexion = 0;
       SubTalarEversion = 0;
 
       //    These Values are configure from the SubjectSpecificData.any
       //    since it is shared by all trials
       GlenohumeralFlexion = 0;
-      GlenohumeralAbduction = 0;
+      GlenohumeralAbduction = 30;
       GlenohumeralExternalRotation = 0;
       ElbowFlexion = 0;
       ElbowPronation = 0;
@@ -80,17 +84,17 @@ Main.ModelSetup.TrialSpecificData =
     };
     Left = {
 
-      HipFlexion = 0;
+      HipFlexion = 5;
       HipAbduction = 0;
       HipExternalRotation = 0;
-      KneeFlexion = 0;
+      KneeFlexion = 5;
       AnklePlantarFlexion = 0;
       SubTalarEversion = 0;
 
       //    These Values are configure from the SubjectSpecificData.any
       //    since it is shared by all trials
       GlenohumeralFlexion = 0;
-      GlenohumeralAbduction = 0;
+      GlenohumeralAbduction = 30;
       GlenohumeralExternalRotation = 0;
       ElbowFlexion = 0;
       ElbowPronation = 0;
