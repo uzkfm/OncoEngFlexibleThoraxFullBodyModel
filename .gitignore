@@ -20,3 +20,11 @@ Application/MocapExamples/Rehazenter-adult-walking-model/Output/*
 ffmpeg2pass-*.log
 # pixi environments
 .pixi
+
+Subjects/*
+!Subjects/SX - Template
+!Subjects/SX - Template/*
+!Subjects/SX - Template/*/*
+!Subjects/S013
+!Subjects/S013/*
+!Subjects/S013/*/*
