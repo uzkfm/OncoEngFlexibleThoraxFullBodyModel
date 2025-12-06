@@ -1,5 +1,9 @@
 Main.ModelSetup.TrialSpecificData =
 {
+  // Custom flag to indicate that this trial is a standing reference trial.
+  // Used in other part of this model to enabled/disable different parts.
+  #define REFERENCE_TRIAL 1
+  
   // This is the name of the markers to be excluded from this specific trial c3d file
   //#define EXCLUDE_
 
