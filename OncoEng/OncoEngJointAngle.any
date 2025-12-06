@@ -1,12 +1,10 @@
-/* Inside "AnyMocapModel.any", add the reference to this file as below:-
+/* Inside "LabSpecificData.any", add the reference to this file as below:-
 
-    AnyKinStudy MarkerTracking = { 
-
-      #include "../../OncoEng/OncoEngJointAngle.any" (or any path leading to this file)
-            
-    };
-    
-<\Tools\AnyMocap>
+       Main.Studies.MarkerTracking = { 
+       
+         #include "../../OncoEng/OncoEngJointAngle.any" (or any path leading to this file)
+               
+       };
     
 */
 
@@ -40,8 +38,6 @@ AnyFolder OncoEngMotionAnalysis = {
     AnyVector L5Angle = Main.HumanModel.BodyModel.Trunk.Joints.Lumbar.L5Sacrum.Pos;
     
   };
-  
-  
   
 };
 
