@@ -1,10 +1,9 @@
 
 #ifndef ANYBODY_PATH_OUTPUT
-// If a local  Output folder exists, use it
-#ifpathexists "Outputs/"
-#path ANYBODY_PATH_OUTPUT "Outputs/"
-#else
+#ifpathexists "C:/Users/menmrk/OneDrive - University of Leeds/Research Project - OncoEng/Research OncoEng Data/OncoEng Normal Cohort/03 AnyBody Folder/Output HDF/"+SUBJECT+"/"
 #path ANYBODY_PATH_OUTPUT "C:/Users/menmrk/OneDrive - University of Leeds/Research Project - OncoEng/Research OncoEng Data/OncoEng Normal Cohort/03 AnyBody Folder/Output HDF/"+SUBJECT+"/"
+#else
+#path ANYBODY_PATH_OUTPUT "Outputs/"
 #endif
 #endif
 
