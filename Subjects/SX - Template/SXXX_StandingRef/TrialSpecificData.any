@@ -1,23 +1,23 @@
 Main.ModelSetup.TrialSpecificData =
 {
+  // This is the name of the markers to be excluded from this specific trial c3d file
+  //#define EXCLUDE_
+  
   // Custom flag to indicate that this trial is a standing reference trial.
   // Used in other part of this model to enabled/disable different parts.
   #define REFERENCE_TRIAL 1
-
-  // This is the name of the markers to be excluded from this specific trial c3d file
-  //#define EXCLUDE_
-
+  
   // This is the name of the trial c3d file without extension.
   // Here we assume the c3d file has the same name as the mainfile directory.
   TrialFileName = MOCAP_NAME_MAINFILEDIR;
 
   // This the C3D frame where the analysis starts
   // If not specified it defaults to the first frame of the C3D file
-  FirstFrame = .C3DFileData.Header.FirstFrameNo;
+  FirstFrame = .C3DFileData.Header.FirstFrameNo+5;
 
   // This the C3D frame where the analysis ends
   // If not specified it defaults the first frame of the C3D file
-  LastFrame = .C3DFileData.Header.LastFrameNo;
+  LastFrame = .C3DFileData.Header.LastFrameNo-5;
 
   // tStart specifies the time of the analysis. Setting this overrides
   // the 'FirstFrame' value
