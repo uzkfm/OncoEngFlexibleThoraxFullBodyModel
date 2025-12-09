@@ -31,14 +31,26 @@ Subjects/*
 !Subjects/S013/*
 !Subjects/S013/*/*
 
+!Subjects/S026
+Subjects/S026/*
 !Subjects/S026/SubjectSpecificData.any
+!Subjects/S026/Inputs
+Subjects/S026/Inputs/*
 !Subjects/S026/Inputs/S026_StandingRef.c3d
-!Subjects/S026/S026_StandingRef/*.any
+!Subjects/S026/S026_StandingRef
 
+!Subjects/S034
+Subjects/S034/*
 !Subjects/S034/SubjectSpecificData.any
+!Subjects/S034/Inputs
+Subjects/S034/Inputs/*
 !Subjects/S034/Inputs/S034_StandingRef.c3d
-!Subjects/S034/S034_StandingRef/*.any
+!Subjects/S034/S034_StandingRef
 
+!Subjects/S035
+Subjects/S035/*
 !Subjects/S035/SubjectSpecificData.any
+!Subjects/S035/Inputs
+Subjects/S035/Inputs/*
 !Subjects/S035/Inputs/S035_StandingRef.c3d
-!Subjects/S035/S035_StandingRef/*.any
+!Subjects/S035/S035_StandingRef
