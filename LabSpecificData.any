@@ -12,7 +12,9 @@ Main.ModelSetup.LabSpecificData = {
 
   #path MOCAP_C3DSETTINGS "C3DSettings.any"
 
+  #ifndef MOCAP_FORCE_PLATE_FILE
   #path MOCAP_FORCE_PLATE_FILE "ForcePlates.any"
+  #endif
 
   // Controls where the Human-Ground residuals (hand of god) are applied
   // to the models. Choises are "Trunk" or "Pelvis".
