@@ -5,7 +5,7 @@ Main.ModelSetup.TrialSpecificData =
   
   // Custom flag to indicate that this trial is a standing reference trial.
   // Used in other part of this model to enabled/disable different parts.
-  #define REFERENCE_TRIAL 1
+  #define REFERENCE_TRIAL_SC_0GH
   
   // This is the name of the trial c3d file without extension.
   // Here we assume the c3d file has the same name as the mainfile directory.
