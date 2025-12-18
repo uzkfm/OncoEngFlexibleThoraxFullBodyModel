@@ -77,6 +77,10 @@
 #undef _RKNE
 #endif
 
+#ifdef EXCLUDE_RMKN
+#undef _RMKN
+#endif
+
 #ifdef EXCLUDE_RTIB
 #undef _RTIB
 #endif
@@ -103,6 +107,10 @@
 
 #ifdef EXCLUDE_LKNE
 #undef _LKNE
+#endif
+
+#ifdef EXCLUDE_LMKN
+#undef _LMKN
 #endif
 
 #ifdef EXCLUDE_LTIB
@@ -147,6 +155,14 @@
 
 #ifdef EXCLUDE_LELB
 #undef _LELB
+#endif
+
+#ifdef EXCLUDE_RMEL
+#undef _RMEL
+#endif
+
+#ifdef EXCLUDE_LMEL
+#undef _LMEL
 #endif
 
 #ifdef EXCLUDE_RFRA
