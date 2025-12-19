@@ -37,240 +37,240 @@ AnyFolder LumbarAngle = {
 
 };
 
-AnyFolder JointLoading = {
-  
-  AnyFolder ThoracicLoading = {
-    
-    AnyFolder ThoracicForces = {  
-      
-      // T1
-      
-      AnyVar AnteroPosteriorForceOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT1.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT1.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT1.Flocal[2]; // Positive to the Right
-      
-      // T2
-      
-      AnyVar AnteroPosteriorForceOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT2.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT2.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT2.Flocal[2]; // Positive to the Right
-      
-      // T3
-      
-      AnyVar AnteroPosteriorForceOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT3.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT3.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT3.Flocal[2]; // Positive to the Right
-      
-      // T4
-      
-      AnyVar AnteroPosteriorForceOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT4.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT4.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT4.Flocal[2]; // Positive to the Right
-      
-      // T5
-      
-      AnyVar AnteroPosteriorForceOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT5.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT5.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT5.Flocal[2]; // Positive to the Right
-      
-      // T6
-      
-      AnyVar AnteroPosteriorForceOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT6.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT6.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT6.Flocal[2]; // Positive to the Right
-      
-      // T7
-      
-      AnyVar AnteroPosteriorForceOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT7.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT7.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT7.Flocal[2]; // Positive to the Right
-      
-      // T8
-      
-      AnyVar AnteroPosteriorForceOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT8.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT8.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT8.Flocal[2]; // Positive to the Right
-      
-      // T9
-      
-      AnyVar AnteroPosteriorForceOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT9.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT9.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT9.Flocal[2]; // Positive to the Right
-      
-      // T10
-      
-      AnyVar AnteroPosteriorForceOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT10.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT10.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT10.Flocal[2]; // Positive to the Right
-      
-      // T11
-      
-      AnyVar AnteroPosteriorForceOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT11.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT11.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT11.Flocal[2]; // Positive to the Right
-      
-      // T12
-      
-      AnyVar AnteroPosteriorForceOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT12.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT12.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT12.Flocal[2]; // Positive to the Right
-      
-    };
-    
-    AnyFolder ThoracicMoments = {
-      
-      // T1
-      
-      AnyVar LateralBendingMomentOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtC7T1.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtC7T1.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtC7T1.Mlocal[2]; // Positive in extension direction
-      
-      // T2
-      
-      AnyVar LateralBendingMomentOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT1T2.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT1T2.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT1T2.Mlocal[2]; // Positive in extension direction
-      
-      // T3
-      
-      AnyVar LateralBendingMomentOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT2T3.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT2T3.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT2T3.Mlocal[2]; // Positive in extension direction
-      
-      // T4
-      
-      AnyVar LateralBendingMomentOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT3T4.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT3T4.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT3T4.Mlocal[2]; // Positive in extension direction
-      
-      // T5
-      
-      AnyVar LateralBendingMomentOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT4T5.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT4T5.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT4T5.Mlocal[2]; // Positive in extension direction
-      
-      // T6
-      
-      AnyVar LateralBendingMomentOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT5T6.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT5T6.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT5T6.Mlocal[2]; // Positive in extension direction
-      
-      // T7
-      
-      AnyVar LateralBendingMomentOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT6T7.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT6T7.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT6T7.Mlocal[2]; // Positive in extension direction
-      
-      // T8
-      
-      AnyVar LateralBendingMomentOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT7T8.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT7T8.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT7T8.Mlocal[2]; // Positive in extension direction
-      
-      // T9
-      
-      AnyVar LateralBendingMomentOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT8T9.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT8T9.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT8T9.Mlocal[2]; // Positive in extension direction
-      
-      // T10
-      
-      AnyVar LateralBendingMomentOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT9T10.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT9T10.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT9T10.Mlocal[2]; // Positive in extension direction
-      
-      // T11
-      
-      AnyVar LateralBendingMomentOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT10T11.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT10T11.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT10T11.Mlocal[2]; // Positive in extension direction
-      
-      // T12
-      
-      AnyVar LateralBendingMomentOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT11T12.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT11T12.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT11T12.Mlocal[2]; // Positive in extension direction
-      
-      
-    };
-    
-  };
-  
-  AnyFolder LumbarLoading = {
-    
-    AnyFolder LumbarForces = {
-      
-      // L1
-      
-      AnyVar AnteroPosteriorForceOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL1.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL1.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL1.Flocal[2]; // Positive to the Right
-      
-      // L2
-      
-      AnyVar AnteroPosteriorForceOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL2.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL2.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL2.Flocal[2]; // Positive to the Right
-      
-      // L3
-      
-      AnyVar AnteroPosteriorForceOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL3.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL3.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL3.Flocal[2]; // Positive to the Right
-      
-      // L4
-      
-      AnyVar AnteroPosteriorForceOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL4.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL4.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL4.Flocal[2]; // Positive to the Right
-      
-      // L5
-      
-      AnyVar AnteroPosteriorForceOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL5.Flocal[0]; // Positive Anteriorly
-      AnyVar SuperoinferiorForceOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL5.Flocal[1]; // Positive Superiorly
-      AnyVar MediolateralForceOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL5.Flocal[2]; // Positive to the Right
-      
-      
-    };
-    
-    AnyFolder LumbarMoments = {
-      
-      // L1
-      
-      AnyVar LateralBendingMomentOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtT12L1.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtT12L1.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtT12L1.Mlocal[2]; // Positive in extension direction
-      
-      // L2
-      
-      AnyVar LateralBendingMomentOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL1L2.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL1L2.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL1L2.Mlocal[2]; // Positive in extension direction
-      
-      // L3
-      
-      AnyVar LateralBendingMomentOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL2L3.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL2L3.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL2L3.Mlocal[2]; // Positive in extension direction
-      
-      // L4
-      
-      AnyVar LateralBendingMomentOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL3L4.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL3L4.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL3L4.Mlocal[2]; // Positive in extension direction
-      
-      // L5
-      
-      AnyVar LateralBendingMomentOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL4L5.Mlocal[0]; // Positive to the right lateral bending
-      AnyVar AxialRotationMomentOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL4L5.Mlocal[1]; // Positive to the right axial turning
-      AnyVar FlexionExtensionMomentOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL4L5.Mlocal[2]; // Positive in extension direction
-      
-      
-    };
-    
-  };
-  
-};
+//AnyFolder JointLoading = {
+//  
+//  AnyFolder ThoracicLoading = {
+//    
+//    AnyFolder ThoracicForces = {  
+//      
+//      // T1
+//      
+//      AnyVar AnteroPosteriorForceOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT1.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT1.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT1.Flocal[2]; // Positive to the Right
+//      
+//      // T2
+//      
+//      AnyVar AnteroPosteriorForceOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT2.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT2.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT2.Flocal[2]; // Positive to the Right
+//      
+//      // T3
+//      
+//      AnyVar AnteroPosteriorForceOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT3.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT3.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT3.Flocal[2]; // Positive to the Right
+//      
+//      // T4
+//      
+//      AnyVar AnteroPosteriorForceOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT4.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT4.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT4.Flocal[2]; // Positive to the Right
+//      
+//      // T5
+//      
+//      AnyVar AnteroPosteriorForceOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT5.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT5.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT5.Flocal[2]; // Positive to the Right
+//      
+//      // T6
+//      
+//      AnyVar AnteroPosteriorForceOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT6.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT6.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT6.Flocal[2]; // Positive to the Right
+//      
+//      // T7
+//      
+//      AnyVar AnteroPosteriorForceOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT7.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT7.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT7.Flocal[2]; // Positive to the Right
+//      
+//      // T8
+//      
+//      AnyVar AnteroPosteriorForceOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT8.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT8.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT8.Flocal[2]; // Positive to the Right
+//      
+//      // T9
+//      
+//      AnyVar AnteroPosteriorForceOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT9.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT9.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT9.Flocal[2]; // Positive to the Right
+//      
+//      // T10
+//      
+//      AnyVar AnteroPosteriorForceOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT10.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT10.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT10.Flocal[2]; // Positive to the Right
+//      
+//      // T11
+//      
+//      AnyVar AnteroPosteriorForceOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT11.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT11.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT11.Flocal[2]; // Positive to the Right
+//      
+//      // T12
+//      
+//      AnyVar AnteroPosteriorForceOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT12.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT12.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.ContactForceOnT12.Flocal[2]; // Positive to the Right
+//      
+//    };
+//    
+//    AnyFolder ThoracicMoments = {
+//      
+//      // T1
+//      
+//      AnyVar LateralBendingMomentOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtC7T1.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtC7T1.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtC7T1.Mlocal[2]; // Positive in extension direction
+//      
+//      // T2
+//      
+//      AnyVar LateralBendingMomentOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT1T2.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT1T2.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT1T2.Mlocal[2]; // Positive in extension direction
+//      
+//      // T3
+//      
+//      AnyVar LateralBendingMomentOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT2T3.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT2T3.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT2T3.Mlocal[2]; // Positive in extension direction
+//      
+//      // T4
+//      
+//      AnyVar LateralBendingMomentOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT3T4.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT3T4.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT3T4.Mlocal[2]; // Positive in extension direction
+//      
+//      // T5
+//      
+//      AnyVar LateralBendingMomentOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT4T5.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT4T5.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT4T5.Mlocal[2]; // Positive in extension direction
+//      
+//      // T6
+//      
+//      AnyVar LateralBendingMomentOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT5T6.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT5T6.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT6 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT5T6.Mlocal[2]; // Positive in extension direction
+//      
+//      // T7
+//      
+//      AnyVar LateralBendingMomentOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT6T7.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT6T7.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT7 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT6T7.Mlocal[2]; // Positive in extension direction
+//      
+//      // T8
+//      
+//      AnyVar LateralBendingMomentOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT7T8.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT7T8.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT8 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT7T8.Mlocal[2]; // Positive in extension direction
+//      
+//      // T9
+//      
+//      AnyVar LateralBendingMomentOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT8T9.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT8T9.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT9 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT8T9.Mlocal[2]; // Positive in extension direction
+//      
+//      // T10
+//      
+//      AnyVar LateralBendingMomentOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT9T10.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT9T10.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT10 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT9T10.Mlocal[2]; // Positive in extension direction
+//      
+//      // T11
+//      
+//      AnyVar LateralBendingMomentOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT10T11.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT10T11.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT11 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT10T11.Mlocal[2]; // Positive in extension direction
+//      
+//      // T12
+//      
+//      AnyVar LateralBendingMomentOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT11T12.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT11T12.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnT12 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Thorax.NetMomentAtT11T12.Mlocal[2]; // Positive in extension direction
+//      
+//      
+//    };
+//    
+//  };
+//  
+//  AnyFolder LumbarLoading = {
+//    
+//    AnyFolder LumbarForces = {
+//      
+//      // L1
+//      
+//      AnyVar AnteroPosteriorForceOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL1.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL1.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL1.Flocal[2]; // Positive to the Right
+//      
+//      // L2
+//      
+//      AnyVar AnteroPosteriorForceOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL2.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL2.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL2.Flocal[2]; // Positive to the Right
+//      
+//      // L3
+//      
+//      AnyVar AnteroPosteriorForceOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL3.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL3.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL3.Flocal[2]; // Positive to the Right
+//      
+//      // L4
+//      
+//      AnyVar AnteroPosteriorForceOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL4.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL4.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL4.Flocal[2]; // Positive to the Right
+//      
+//      // L5
+//      
+//      AnyVar AnteroPosteriorForceOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL5.Flocal[0]; // Positive Anteriorly
+//      AnyVar SuperoinferiorForceOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL5.Flocal[1]; // Positive Superiorly
+//      AnyVar MediolateralForceOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.ContactForceOnL5.Flocal[2]; // Positive to the Right
+//      
+//      
+//    };
+//    
+//    AnyFolder LumbarMoments = {
+//      
+//      // L1
+//      
+//      AnyVar LateralBendingMomentOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtT12L1.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtT12L1.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnL1 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtT12L1.Mlocal[2]; // Positive in extension direction
+//      
+//      // L2
+//      
+//      AnyVar LateralBendingMomentOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL1L2.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL1L2.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnL2 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL1L2.Mlocal[2]; // Positive in extension direction
+//      
+//      // L3
+//      
+//      AnyVar LateralBendingMomentOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL2L3.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL2L3.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnL3 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL2L3.Mlocal[2]; // Positive in extension direction
+//      
+//      // L4
+//      
+//      AnyVar LateralBendingMomentOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL3L4.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL3L4.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnL4 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL3L4.Mlocal[2]; // Positive in extension direction
+//      
+//      // L5
+//      
+//      AnyVar LateralBendingMomentOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL4L5.Mlocal[0]; // Positive to the right lateral bending
+//      AnyVar AxialRotationMomentOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL4L5.Mlocal[1]; // Positive to the right axial turning
+//      AnyVar FlexionExtensionMomentOnL5 = Main.Studies.InverseDynamicStudy.OncoEngLoadingAnalysis.Lumbar.NetMomentAtL4L5.Mlocal[2]; // Positive in extension direction
+//      
+//      
+//    };
+//    
+//  };
+//  
+//};
 
 AnyFolder SegmentLoading = {      // New definition with reference frame inside the vertebral segment
   
@@ -354,7 +354,77 @@ AnyFolder SegmentLoading = {      // New definition with reference frame inside 
     
     AnyFolder ThoracicMoments = {
       
+      // T1
       
+      AnyVar LateralBendingMomentOfT1 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT1.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT1 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT1.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT1 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT1.Mlocal[2]; // Positive in extension direction  
+            
+      // T2
+
+      AnyVar LateralBendingMomentOfT2 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT2.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT2 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT2.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT2 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT2.Mlocal[2]; // Positive in extension direction  
+            
+      // T3
+      
+      AnyVar LateralBendingMomentOfT3 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT3.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT3 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT3.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT3 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT3.Mlocal[2]; // Positive in extension direction  
+            
+      // T4
+      
+      AnyVar LateralBendingMomentOfT4 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT4.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT4 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT4.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT4 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT4.Mlocal[2]; // Positive in extension direction  
+            
+      // T5
+      
+      AnyVar LateralBendingMomentOfT5 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT5.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT5 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT5.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT5 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT5.Mlocal[2]; // Positive in extension direction  
+             
+      // T6
+      
+      AnyVar LateralBendingMomentOfT6 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT6.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT6 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT6.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT6 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT6.Mlocal[2]; // Positive in extension direction 
+             
+      // T7
+      
+      AnyVar LateralBendingMomentOfT7 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT7.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT7 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT7.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT7 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT7.Mlocal[2]; // Positive in extension direction 
+             
+      // T8
+      
+      AnyVar LateralBendingMomentOfT8 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT8.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT8 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT8.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT8 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT8.Mlocal[2]; // Positive in extension direction 
+             
+      // T9
+      
+      AnyVar LateralBendingMomentOfT9 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT9.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT9 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT9.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT9 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT9.Mlocal[2]; // Positive in extension direction 
+             
+      // T10
+      
+      AnyVar LateralBendingMomentOfT10 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT10.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT10 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT10.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT10 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT10.Mlocal[2]; // Positive in extension direction 
+             
+      // T11
+      
+      AnyVar LateralBendingMomentOfT11 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT11.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT11 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT11.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT11 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT11.Mlocal[2]; // Positive in extension direction 
+             
+      // T12
+      
+      AnyVar LateralBendingMomentOfT12 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT12.Mlocal[0]; // Positive to the right lateral bending
+      AnyVar AxialRotationMomentOfT12 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT12.Mlocal[1]; // Positive to the right axial turning
+      AnyVar FlexionExtensionMomentOfT12 = Main.Studies.InverseDynamicStudy.OncoEngKineticAnalysis.Thorax.NetMomentAtT12.Mlocal[2]; // Positive in extension direction 
       
     };
     

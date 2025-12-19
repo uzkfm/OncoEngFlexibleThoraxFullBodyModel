@@ -46,7 +46,7 @@ Main.ModelSetup.LabSpecificData = {
   };
   
   Main.Studies.InverseDynamicStudy = {
-    #include "OncoEng/OncoEngJointLoading.any"
+//    #include "OncoEng/OncoEngJointLoading.any"
     #include "OncoEng/OncoEngSegmentLoading.any"
   };
 
